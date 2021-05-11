@@ -1,0 +1,13 @@
+﻿<base:ChartViewBase x:Class="CM.Track.GIS.GIS"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts"
+                    xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf">
+
+    <Grid Width="3840"
+          Height="1728"
+          x:Name="webgrid"
+          Background="White">
+        <wpf:ChromiumWebBrowser x:Name="TheWebBrowser"/>
+    </Grid>
+</base:ChartViewBase>

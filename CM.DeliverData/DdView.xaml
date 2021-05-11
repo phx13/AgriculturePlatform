@@ -1,0 +1,25 @@
+﻿<base:ChartViewBase xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts"
+                    x:Class="CM.DeliverData.DdView"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="#2272B3ED">
+        <TextBlock VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="35"
+                   FontFamily="微软雅黑"
+                   Foreground="White"
+                   TextWrapping="Wrap">
+            <Run Text="今日向" />
+            <Run Text="{Binding DepotName}"
+                 Foreground="#72B3ED">
+                <Run.Style>
+                    <Style TargetType="Run" />
+                </Run.Style>
+            </Run>
+            <Run Text="仓库发送" />
+            <Run Text="{Binding Count}"
+                 Foreground="#72B3ED" />
+            <Run Text="吨货资" />
+        </TextBlock>
+    </Grid>
+</base:ChartViewBase>

@@ -1,0 +1,81 @@
+﻿<base:ChartViewBase x:Class="CM.Track.TopList.TopListView"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts">
+    <base:ChartViewBase.Resources>
+        <Style x:Key="ListBoxItemNoEffectStyle"
+               TargetType="{x:Type ListBoxItem}">
+            <Setter Property="SnapsToDevicePixels"
+                    Value="True" />
+            <Setter Property="OverridesDefaultStyle"
+                    Value="True" />
+            <Setter Property="FocusVisualStyle"
+                    Value="{x:Null}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border x:Name="Border"
+                                BorderThickness="0"
+                                Background="Transparent">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </base:ChartViewBase.Resources>
+    <Viewbox Margin="10,10,10,5"
+             Stretch="Uniform">
+
+        <ListBox ItemsSource="{Binding ModelList}"
+                 x:Name="topListBox"
+                 ItemContainerStyle="{StaticResource ListBoxItemNoEffectStyle}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Vertical"
+                               Height="{Binding MyHeight}"
+                               Width="{Binding MyWidth}" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Width="130"
+                          Height="85"
+                          Margin="5,0,5,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Border Background="{Binding EnumColor,UpdateSourceTrigger=PropertyChanged}"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch"
+                                Grid.Column="0"
+                                Grid.Row="0">
+                            <TextBlock HorizontalAlignment="Left"
+                                       VerticalAlignment="Center"
+                                       Margin="8,0,0,0"
+                                       FontSize="22"
+                                       FontFamily="微软雅黑"
+                                       Foreground="White"
+                                       Text="{Binding EnumName,UpdateSourceTrigger=PropertyChanged}" />
+                        </Border>
+
+                        <TextBlock HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"
+                                   Margin="4,0,0,0"
+                                   FontSize="40"
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   FontFamily="Bebas Neue"
+                                   Foreground="#DBDBEA"
+                                   Text="{Binding EnumCount,UpdateSourceTrigger=PropertyChanged}" />
+
+                    </Grid>
+                </DataTemplate>
+
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Viewbox>
+</base:ChartViewBase>

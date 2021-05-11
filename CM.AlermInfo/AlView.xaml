@@ -1,0 +1,30 @@
+﻿<base:ChartViewBase xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts"
+                    x:Class="CM.AlermInfo.AlView"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Border Background="#33B20000"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Stretch"
+            BorderBrush="#B20000"
+            BorderThickness="1"
+            MinHeight="110">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0"
+                   Source="01.fw.png"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" />
+            <TextBlock Grid.Column="1"
+                       Text="{Binding ShowCount}"
+                       Foreground="White"
+                       FontSize="35"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="10" />
+        </Grid>
+    </Border>
+</base:ChartViewBase>

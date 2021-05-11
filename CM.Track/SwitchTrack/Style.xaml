@@ -1,0 +1,100 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="ToggleBtnStyle"
+           TargetType="{x:Type ToggleButton}">
+        <Setter Property="FocusVisualStyle"
+                Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Grid Name="grid"
+                          UseLayoutRounding="True"
+                          Margin="2"
+                          Cursor="Hand"
+                          Width="170"
+                          Height="45">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="/CM.Track;component/Images/Button.png"
+                                        Opacity="0.8" />
+                        </Grid.Background>
+                        <TextBlock x:Name="textBlock"
+                                   Text="{TemplateBinding Content}"
+                                   Foreground="#D6F8E9"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="16"
+                                   FontFamily="微软雅黑"
+                                   Cursor="Hand"
+                                   FontStyle="Italic" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked"
+                                 Value="False">
+                            <Trigger.Setters>
+                                <Setter Property="Background"
+                                        TargetName="grid">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="/CM.Track;component/Images/Button.png"
+                                                    Opacity="0.8" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger.Setters>
+                        </Trigger>
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+                            <Trigger.Setters>
+                                <Setter Property="Background"
+                                        TargetName="grid">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="/CM.Track;component/Images/ButtonS.png"
+                                                    Opacity="0.8" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger.Setters>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ListBoxItemNoEffectStyle"
+           TargetType="{x:Type ListBoxItem}">
+        <Setter Property="SnapsToDevicePixels"
+                Value="True" />
+        <Setter Property="OverridesDefaultStyle"
+                Value="True" />
+        <Setter Property="FocusVisualStyle"
+                Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListBoxItem">
+                    <Border x:Name="Border"
+                            BorderThickness="0"
+                            Background="Transparent">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TextBoxStyle"
+           TargetType="{x:Type TextBox}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <TextBox Background="Transparent"
+                             BorderThickness="3"
+                             BorderBrush="#FF377471"
+                             Margin="5,8"
+                             Foreground="White"
+                             Text="{TemplateBinding Text}"
+                             FontSize="16" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,38 @@
+﻿<base:ChartViewBase x:Class="CM.AnnularProgress.Pie.PieViewHP"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts"
+                    xmlns:wpf="clr-namespace:Steema.TeeChart.WPF;assembly=TeeChart.WPF"
+                    xmlns:converters="clr-namespace:DAD3.Charts.HP.Themes.Converters;assembly=DAD3.Charts.HP">
+
+    <Control.Resources>
+        <converters:MarginConverter x:Key="MarginConverter" />
+    </Control.Resources>
+
+    <Grid>
+        <wpf:TChart x:Name="tChart" />
+        <StackPanel x:Name="textPanel"
+                    Visibility="Collapsed"
+                    HorizontalAlignment="{Binding BasicHorizontalAlignment}"
+                    VerticalAlignment="{Binding BasicVerticalAlignment}">
+            <StackPanel.Margin>
+                <MultiBinding Converter="{StaticResource MarginConverter}">
+                    <Binding Path="BasicHorizontalAlignment" />
+                    <Binding Path="BasicVerticalAlignment" />
+                    <Binding Path="BasicHorizontalMargin" />
+                    <Binding Path="BasicVerticalMargin" />
+                </MultiBinding>
+            </StackPanel.Margin>
+            <TextBlock x:Name="ShowLegend"
+                       FontSize="{Binding AxisLabelFontSize}"
+                       TextAlignment="Center"
+                       FontFamily="{Binding AxisLabelFontFamily}"
+                       TextWrapping="Wrap" />
+            <TextBlock x:Name="ShowValue"
+                       FontSize="{Binding AxisLabelFontSize}"
+                       TextAlignment="Center"
+                       FontFamily="{Binding AxisLabelFontFamily}"
+                       TextWrapping="Wrap" />
+        </StackPanel>
+    </Grid>
+</base:ChartViewBase>

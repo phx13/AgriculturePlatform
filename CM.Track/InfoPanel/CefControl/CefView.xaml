@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="CM.Track.InfoPanel.CefControl.CefView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf">
+    <Grid>
+        <wpf:ChromiumWebBrowser x:Name="TheWebBrowser"
+                                Visibility="Hidden" />
+    </Grid>
+</UserControl>

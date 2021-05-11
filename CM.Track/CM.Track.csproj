@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9438ADB0-F09F-48F2-8EE4-9125C9CB0084}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CM.Track</RootNamespace>
+    <AssemblyName>CM.Track</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AVE.Controls.GIS.Engine">
+      <HintPath>..\Reference\AVE.Controls.GIS.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="AVE.Controls.GIS3D.OSG.Engine">
+      <HintPath>..\Reference\AVE.Controls.GIS3D.OSG.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="AVE.Controls.Infrastructure">
+      <HintPath>..\Reference\AVE.Controls.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AVE.Controls.Utils">
+      <HintPath>..\Reference\AVE.Controls.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="AVE.Infrastructure">
+      <HintPath>..\Reference\AVE.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AVE.Launcher.Infrastructure">
+      <HintPath>..\Reference\AVE.Launcher.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AVE.Playback">
+      <HintPath>..\Reference\AVE.Playback.dll</HintPath>
+    </Reference>
+    <Reference Include="AVECLI.GIS3D.OSG.Core">
+      <HintPath>..\Reference\AVECLI.GIS3D.OSG.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CCP4.Helper">
+      <HintPath>..\Reference\CCP4.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="CCP4.Models">
+      <HintPath>..\Reference\CCP4.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="CCP4.Utilities, Version=5.0.2019.228, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\CCP4.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="CCPSOE.Models">
+      <HintPath>..\Reference\CCPSOE.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp">
+      <HintPath>..\Reference\Cef\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Core">
+      <HintPath>..\Reference\Cef\CefSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Wpf">
+      <HintPath>..\Reference\Cef\CefSharp.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="DAD.Controls.ViewLayout">
+      <HintPath>..\Reference\DAD.Controls.ViewLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="DAD3.Charts">
+      <HintPath>..\Reference\DAD3.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="DAD3.Charts.GIS2D">
+      <HintPath>..\Reference\DAD3.Charts.GIS2D.dll</HintPath>
+    </Reference>
+    <Reference Include="DAD3.Charts.GIS3D">
+      <HintPath>..\Reference\DAD3.Charts.GIS3D.dll</HintPath>
+    </Reference>
+    <Reference Include="DAD3.Models">
+      <HintPath>..\Reference\DAD3.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Client">
+      <HintPath>..\Reference\ESRI.ArcGIS.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\Reference\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp, Version=4.1.30.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ScreenMatrix.Proxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ScreenMatrix.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2DTrack\GIS2DTrackController.cs" />
+    <Compile Include="2DTrack\GIS2DTrackDataViewModel.cs" />
+    <Compile Include="3DTrack\GIS3DTrackController.cs" />
+    <Compile Include="3DTrack\GIS3DTrackDataViewModel.cs" />
+    <Compile Include="CricleGroup\CricleGroup.xaml.cs">
+      <DependentUpon>CricleGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CricleGroup\CricleGroupController.cs" />
+    <Compile Include="CricleGroup\CricleGroupDataViewModel.cs" />
+    <Compile Include="GIS\GIS.xaml.cs">
+      <DependentUpon>GIS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GIS\GISController.cs" />
+    <Compile Include="GIS\GISDataViewModel.cs" />
+    <Compile Include="ImagePlayer\ImagePlayer.xaml.cs">
+      <DependentUpon>ImagePlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePlayer\ImagePlayerController.cs" />
+    <Compile Include="ImagePlayer\ImagePlayerDataViewModel.cs" />
+    <Compile Include="InfoPanel\CefControl\CefView.xaml.cs">
+      <DependentUpon>CefView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPanel\InfoPanel.xaml.cs">
+      <DependentUpon>InfoPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPanel\InfoPanelController.cs" />
+    <Compile Include="InfoPanel\InfoPanelDataViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Definition.cs" />
+    <Compile Include="Recognition\Recognition.xaml.cs">
+      <DependentUpon>Recognition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Recognition\RecognitionController.cs" />
+    <Compile Include="Recognition\RecognitionDataViewModel.cs" />
+    <Compile Include="Rolling\Rolling.xaml.cs">
+      <DependentUpon>Rolling.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rolling\RollingController.cs" />
+    <Compile Include="Rolling\RollingDataViewModel.cs" />
+    <Compile Include="SwitchTrack\SwitchTrack.xaml.cs">
+      <DependentUpon>SwitchTrack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SwitchTrack\SwitchTrackController.cs" />
+    <Compile Include="SwitchTrack\SwitchTrackDataViewModel.cs" />
+    <Compile Include="TopList\EnumColorModel.cs" />
+    <Compile Include="TopList\TopListController.cs" />
+    <Compile Include="TopList\TopListDataViewModel.cs" />
+    <Compile Include="TopList\TopListView.xaml.cs">
+      <DependentUpon>TopListView.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="CricleGroup\CricleGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GIS\GIS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ImagePlayer\ImagePlayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="InfoPanel\CefControl\CefView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoPanel\InfoPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Recognition\Recognition.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Rolling\Rolling.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SwitchTrack\SwitchTrack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SwitchTrack\Style.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TopList\TopListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Button.png" />
+    <Resource Include="Images\ButtonS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\专家识别.png" />
+    <Resource Include="Images\算法识别.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\遮罩.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\标牌.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,60 @@
+﻿<base:ChartViewBase xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts"
+                    x:Class="CM.AnnularProgress.GrowActivity.ActivityView"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Width="580"
+          Height="118">
+        <Grid.Background>
+            <ImageBrush ImageSource="农事行为.png" />
+        </Grid.Background>
+        <Grid VerticalAlignment="Stretch"
+              HorizontalAlignment="Left"
+              Width="164">
+            <TextBlock FontSize="22"
+                       FontWeight="Bold"
+                       FontFamily="微软雅黑"
+                       Foreground="#72B2EC"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Center"
+                       Text="{Binding TypeValue}"
+                       Margin="0,70,0,0" />
+        </Grid>
+
+        <TextBlock FontSize="22"
+                   FontFamily="微软雅黑"
+                   Foreground="#72B2EC"
+                   Margin="260,23,0,0">
+            <Run Text="{Binding JiDiValue}"
+                 Foreground="#72B2EC">
+                <Run.Style>
+                    <Style TargetType="Run" />
+                </Run.Style>
+            </Run>
+        </TextBlock>
+
+        <TextBlock FontSize="22"
+                   FontFamily="微软雅黑"
+                   Foreground="#72B2EC"
+                   Margin="260,69,0,0">
+            <Run Text="{Binding TimeValue}"
+                 Foreground="#72B2EC">
+                <Run.Style>
+                    <Style TargetType="Run" />
+                </Run.Style>
+            </Run>
+        </TextBlock>
+
+        <TextBlock FontSize="22"
+                   FontFamily="微软雅黑"
+                   Foreground="#72B2EC"
+                   Margin="490,68,0,0">
+            <Run Text="{Binding StateValue}"
+                 Foreground="#72B2EC">
+                <Run.Style>
+                    <Style TargetType="Run" />
+                </Run.Style>
+            </Run>
+        </TextBlock>
+
+    </Grid>
+</base:ChartViewBase>

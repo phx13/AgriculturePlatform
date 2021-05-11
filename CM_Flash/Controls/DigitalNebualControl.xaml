@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="CM_Flash.Controls.DigitalNebualControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d">
+    <Grid x:Name="root" Height="299" Width="674" Background="Aquamarine">
+
+        <Border HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <Grid x:Name="grid_lineContainer"
+                  ClipToBounds="True"
+                  Height="{Binding ActualHeight,ElementName=root}"
+                  Width="{Binding ActualWidth,ElementName=root}">
+                <Grid.Clip>
+                    <PathGeometry>
+                        <PathFigure IsClosed="False">
+                            <PolyLineSegment
+                                Points="1638,940.5 1608,843 1608,843 1608,843 1589,822 1589,822 1589,822 1525,824 1525,824 1525,824 1468,813 1468,813 1468,813 1412,787 1412,787 1412,787 1325,741 1325,741 1325,741 1316,712 1316,712 1316,712 1293,703 1293,703 1293,703 1235,629 1235,629 1235,629 1256,550 1256,550 1256,550 1305,482 1305,482 1305,482 1346,486 1346,486 1346,486 1372,419 1372,419 1372,419 1426,410 1426,410 1426,410 1476,381 1476,381 1476,381 1552,376 1552,376 1552,376 1638,370 1638,370 1638,370 1700,399 1700,399 1700,399 1728,450 1728,450 1728,450 1796,454 1796,454 1796,454 1831,531 1831,531 1831,531 1872,549 1872,549 1872,549 1893,606 1893,606 1893,606 1898,653 1898,653 1898,653 1932,669 1932,669 1932,669 1908,706 1908,706 1908,706 1920,746 1920,746 1920,746 1881,781 1881,781 1881,781 1864,842 1864,842 1864,842 1797,864 1797,864 1797,864 1788,858 1788,858 1788,858 1750,891 1750,891 1750,891 1638,940.5 1638,940.5" />
+                        </PathFigure>
+                    </PathGeometry>
+                </Grid.Clip>
+            </Grid>
+
+
+        </Border>
+
+        <Border HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <Canvas x:Name="cvs_starContainer"
+                    ClipToBounds="True"
+                    Height="{Binding ActualHeight,ElementName=root}"
+                    Width="{Binding ActualWidth,ElementName=root}">
+                <Canvas.Clip>
+                    <PathGeometry>
+                        <PathFigure IsClosed="False">
+                            <PolyLineSegment
+                                Points="1638,940.5 1608,843 1608,843 1608,843 1589,822 1589,822 1589,822 1525,824 1525,824 1525,824 1468,813 1468,813 1468,813 1412,787 1412,787 1412,787 1325,741 1325,741 1325,741 1316,712 1316,712 1316,712 1293,703 1293,703 1293,703 1235,629 1235,629 1235,629 1256,550 1256,550 1256,550 1305,482 1305,482 1305,482 1346,486 1346,486 1346,486 1372,419 1372,419 1372,419 1426,410 1426,410 1426,410 1476,381 1476,381 1476,381 1552,376 1552,376 1552,376 1638,370 1638,370 1638,370 1700,399 1700,399 1700,399 1728,450 1728,450 1728,450 1796,454 1796,454 1796,454 1831,531 1831,531 1831,531 1872,549 1872,549 1872,549 1893,606 1893,606 1893,606 1898,653 1898,653 1898,653 1932,669 1932,669 1932,669 1908,706 1908,706 1908,706 1920,746 1920,746 1920,746 1881,781 1881,781 1881,781 1864,842 1864,842 1864,842 1797,864 1797,864 1797,864 1788,858 1788,858 1788,858 1750,891 1750,891 1750,891 1638,940.5 1638,940.5" />
+                        </PathFigure>
+                    </PathGeometry>
+                </Canvas.Clip>
+            </Canvas>
+        </Border>
+    </Grid>
+</UserControl>

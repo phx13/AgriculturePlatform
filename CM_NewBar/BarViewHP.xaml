@@ -1,0 +1,10 @@
+﻿<base:ChartViewBase x:Class="CM_NewBar.BarViewHP"
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts"
+					xmlns:wpf="clr-namespace:Steema.TeeChart.WPF;assembly=TeeChart.WPF">
+    <Grid>
+        <wpf:TChart x:Name="tChart1" />
+        <wpf:TChart x:Name="tChart" />
+    </Grid>
+</base:ChartViewBase>

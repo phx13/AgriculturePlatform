@@ -1,0 +1,13 @@
+﻿<base:ChartViewBase xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts"
+                    x:Class="CM.AnnularProgress.ShowText.ShowTextView"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+        <TextBlock TextWrapping="Wrap"
+                   FontSize="{Binding DVM.AxisLabelFontSize}"
+                   FontFamily="{Binding DVM.AxisLabelFontFamily}"
+                   Foreground="{Binding DVM.LegendTextColor}"
+                   Text="{Binding TextValue}" />
+    </Grid>
+</base:ChartViewBase>

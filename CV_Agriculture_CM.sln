@@ -1,0 +1,205 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.RegionColoring", "CM.RegionColoring\CM.RegionColoring.csproj", "{8391BCFF-07EE-4A53-AEEF-321F0068FF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.DeliverData", "CM.DeliverData\CM.DeliverData.csproj", "{3BA09FF3-DCC1-477F-A30A-6F1B6029D961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.SwitchLayerButton", "CM.SwitchLayerButton\CM.SwitchLayerButton.csproj", "{196DABEE-87AE-472C-91CF-02BE4C90B29C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.AlermInfo", "CM.AlermInfo\CM.AlermInfo.csproj", "{80B5591E-2B44-4E43-9946-6AC5BE9B7E27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.MediaPlay", "CM.MediaPlay\CM.MediaPlay.csproj", "{2154CA4F-5961-4BF6-9476-55F49E6E6C67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.Track", "CM.Track\CM.Track.csproj", "{9438ADB0-F09F-48F2-8EE4-9125C9CB0084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.AnnularProgress", "CM.AnnularProgress\CM.AnnularProgress.csproj", "{F1EC4E10-4BB0-45E8-BE4E-3E595D94679E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM_Flash", "CM_Flash\CM_Flash.csproj", "{EA9ED330-ADE3-42A5-A2E9-9382364405C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.PopupPanels", "CM.PopupPanels\CM.PopupPanels.csproj", "{65D3ACD0-1222-4431-B4AE-EA013931154C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.SwitchMonthImage", "CM.SwitchMonthImage\CM.SwitchMonthImage.csproj", "{CDF819A9-7C56-4FC4-A11B-772AD2443C7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.GrowActivity", "CM.GrowActivity\CM.GrowActivity.csproj", "{B7B30535-F2C2-4F55-AA78-2F86496C2658}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.VideoAnalysis", "CM.VideoAnalysis\CM.VideoAnalysis.csproj", "{FAEE12C9-3218-4B73-823D-751D2D0BF37D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.MoveMap", "CM.MoveMap\CM.MoveMap.csproj", "{E5406A14-7144-4C7B-AFD8-9D0C7A413050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.CmDataGrid", "CM.CmDataGrid\CM.CmDataGrid.csproj", "{C71A2E09-FA22-4F6E-A15D-D753077544A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8391BCFF-07EE-4A53-AEEF-321F0068FF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8391BCFF-07EE-4A53-AEEF-321F0068FF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8391BCFF-07EE-4A53-AEEF-321F0068FF9B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8391BCFF-07EE-4A53-AEEF-321F0068FF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8391BCFF-07EE-4A53-AEEF-321F0068FF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8391BCFF-07EE-4A53-AEEF-321F0068FF9B}.Release|x64.ActiveCfg = Release|Any CPU
+		{3BA09FF3-DCC1-477F-A30A-6F1B6029D961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA09FF3-DCC1-477F-A30A-6F1B6029D961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA09FF3-DCC1-477F-A30A-6F1B6029D961}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3BA09FF3-DCC1-477F-A30A-6F1B6029D961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA09FF3-DCC1-477F-A30A-6F1B6029D961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA09FF3-DCC1-477F-A30A-6F1B6029D961}.Release|x64.ActiveCfg = Release|Any CPU
+		{196DABEE-87AE-472C-91CF-02BE4C90B29C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196DABEE-87AE-472C-91CF-02BE4C90B29C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196DABEE-87AE-472C-91CF-02BE4C90B29C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{196DABEE-87AE-472C-91CF-02BE4C90B29C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196DABEE-87AE-472C-91CF-02BE4C90B29C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{196DABEE-87AE-472C-91CF-02BE4C90B29C}.Release|x64.ActiveCfg = Release|Any CPU
+		{80B5591E-2B44-4E43-9946-6AC5BE9B7E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B5591E-2B44-4E43-9946-6AC5BE9B7E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B5591E-2B44-4E43-9946-6AC5BE9B7E27}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{80B5591E-2B44-4E43-9946-6AC5BE9B7E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B5591E-2B44-4E43-9946-6AC5BE9B7E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B5591E-2B44-4E43-9946-6AC5BE9B7E27}.Release|x64.ActiveCfg = Release|Any CPU
+		{2154CA4F-5961-4BF6-9476-55F49E6E6C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2154CA4F-5961-4BF6-9476-55F49E6E6C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2154CA4F-5961-4BF6-9476-55F49E6E6C67}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2154CA4F-5961-4BF6-9476-55F49E6E6C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2154CA4F-5961-4BF6-9476-55F49E6E6C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2154CA4F-5961-4BF6-9476-55F49E6E6C67}.Release|x64.ActiveCfg = Release|Any CPU
+		{9438ADB0-F09F-48F2-8EE4-9125C9CB0084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9438ADB0-F09F-48F2-8EE4-9125C9CB0084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9438ADB0-F09F-48F2-8EE4-9125C9CB0084}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9438ADB0-F09F-48F2-8EE4-9125C9CB0084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9438ADB0-F09F-48F2-8EE4-9125C9CB0084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9438ADB0-F09F-48F2-8EE4-9125C9CB0084}.Release|x64.ActiveCfg = Release|Any CPU
+		{F1EC4E10-4BB0-45E8-BE4E-3E595D94679E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EC4E10-4BB0-45E8-BE4E-3E595D94679E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EC4E10-4BB0-45E8-BE4E-3E595D94679E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F1EC4E10-4BB0-45E8-BE4E-3E595D94679E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1EC4E10-4BB0-45E8-BE4E-3E595D94679E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1EC4E10-4BB0-45E8-BE4E-3E595D94679E}.Release|x64.ActiveCfg = Release|Any CPU
+		{EA9ED330-ADE3-42A5-A2E9-9382364405C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9ED330-ADE3-42A5-A2E9-9382364405C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9ED330-ADE3-42A5-A2E9-9382364405C8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EA9ED330-ADE3-42A5-A2E9-9382364405C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9ED330-ADE3-42A5-A2E9-9382364405C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9ED330-ADE3-42A5-A2E9-9382364405C8}.Release|x64.ActiveCfg = Release|Any CPU
+		{65D3ACD0-1222-4431-B4AE-EA013931154C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D3ACD0-1222-4431-B4AE-EA013931154C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D3ACD0-1222-4431-B4AE-EA013931154C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{65D3ACD0-1222-4431-B4AE-EA013931154C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D3ACD0-1222-4431-B4AE-EA013931154C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65D3ACD0-1222-4431-B4AE-EA013931154C}.Release|x64.ActiveCfg = Release|Any CPU
+		{CDF819A9-7C56-4FC4-A11B-772AD2443C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF819A9-7C56-4FC4-A11B-772AD2443C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF819A9-7C56-4FC4-A11B-772AD2443C7F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CDF819A9-7C56-4FC4-A11B-772AD2443C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF819A9-7C56-4FC4-A11B-772AD2443C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF819A9-7C56-4FC4-A11B-772AD2443C7F}.Release|x64.ActiveCfg = Release|Any CPU
+		{B7B30535-F2C2-4F55-AA78-2F86496C2658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B30535-F2C2-4F55-AA78-2F86496C2658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B30535-F2C2-4F55-AA78-2F86496C2658}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B7B30535-F2C2-4F55-AA78-2F86496C2658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B30535-F2C2-4F55-AA78-2F86496C2658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B30535-F2C2-4F55-AA78-2F86496C2658}.Release|x64.ActiveCfg = Release|Any CPU
+		{FAEE12C9-3218-4B73-823D-751D2D0BF37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAEE12C9-3218-4B73-823D-751D2D0BF37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAEE12C9-3218-4B73-823D-751D2D0BF37D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FAEE12C9-3218-4B73-823D-751D2D0BF37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAEE12C9-3218-4B73-823D-751D2D0BF37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAEE12C9-3218-4B73-823D-751D2D0BF37D}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5406A14-7144-4C7B-AFD8-9D0C7A413050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5406A14-7144-4C7B-AFD8-9D0C7A413050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5406A14-7144-4C7B-AFD8-9D0C7A413050}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5406A14-7144-4C7B-AFD8-9D0C7A413050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5406A14-7144-4C7B-AFD8-9D0C7A413050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5406A14-7144-4C7B-AFD8-9D0C7A413050}.Release|x64.ActiveCfg = Release|Any CPU
+		{C71A2E09-FA22-4F6E-A15D-D753077544A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71A2E09-FA22-4F6E-A15D-D753077544A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71A2E09-FA22-4F6E-A15D-D753077544A8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C71A2E09-FA22-4F6E-A15D-D753077544A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71A2E09-FA22-4F6E-A15D-D753077544A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71A2E09-FA22-4F6E-A15D-D753077544A8}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C93417D4-B3A4-4834-9CBE-A3774EC6E471}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.0.0.1:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CM.RegionColoring\\CM.RegionColoring.csproj
+		SccProjectName1 = CM.RegionColoring
+		SccLocalPath1 = CM.RegionColoring
+		SccProjectUniqueName2 = CM.DeliverData\\CM.DeliverData.csproj
+		SccProjectName2 = CM.DeliverData
+		SccLocalPath2 = CM.DeliverData
+		SccProjectUniqueName3 = CM.SwitchLayerButton\\CM.SwitchLayerButton.csproj
+		SccProjectName3 = CM.SwitchLayerButton
+		SccLocalPath3 = CM.SwitchLayerButton
+		SccProjectUniqueName4 = CM.AlermInfo\\CM.AlermInfo.csproj
+		SccProjectName4 = CM.AlermInfo
+		SccLocalPath4 = CM.AlermInfo
+		SccProjectUniqueName5 = CM.MediaPlay\\CM.MediaPlay.csproj
+		SccProjectName5 = CM.MediaPlay
+		SccLocalPath5 = CM.MediaPlay
+		SccProjectUniqueName6 = CM.Track\\CM.Track.csproj
+		SccProjectName6 = CM.Track
+		SccLocalPath6 = CM.Track
+		SccProjectUniqueName7 = CM.AnnularProgress\\CM.AnnularProgress.csproj
+		SccProjectName7 = CM.AnnularProgress
+		SccLocalPath7 = CM.AnnularProgress
+		SccProjectUniqueName8 = CM_Flash\\CM_Flash.csproj
+		SccProjectName8 = CM_Flash
+		SccLocalPath8 = CM_Flash
+		SccProjectUniqueName9 = CM.PopupPanels\\CM.PopupPanels.csproj
+		SccProjectName9 = CM.PopupPanels
+		SccLocalPath9 = CM.PopupPanels
+		SccProjectUniqueName10 = CM.SwitchMonthImage\\CM.SwitchMonthImage.csproj
+		SccProjectName10 = CM.SwitchMonthImage
+		SccLocalPath10 = CM.SwitchMonthImage
+		SccProjectUniqueName11 = CM.GrowActivity\\CM.GrowActivity.csproj
+		SccProjectName11 = CM.GrowActivity
+		SccLocalPath11 = CM.GrowActivity
+		SccProjectUniqueName12 = CM.VideoAnalysis\\CM.VideoAnalysis.csproj
+		SccProjectName12 = CM.VideoAnalysis
+		SccLocalPath12 = CM.VideoAnalysis
+		SccProjectUniqueName13 = CM.MoveMap\\CM.MoveMap.csproj
+		SccProjectName13 = CM.MoveMap
+		SccLocalPath13 = CM.MoveMap
+		SccProjectUniqueName14 = CM.CmDataGrid\\CM.CmDataGrid.csproj
+		SccProjectName14 = CM.CmDataGrid
+		SccLocalPath14 = CM.CmDataGrid
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.0.0.1:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CM.RegionColoring\\CM.RegionColoring.csproj
+		SccProjectName1 = CM.RegionColoring
+		SccLocalPath1 = CM.RegionColoring
+		SccProjectUniqueName2 = CM.DeliverData\\CM.DeliverData.csproj
+		SccProjectName2 = CM.DeliverData
+		SccLocalPath2 = CM.DeliverData
+		SccProjectUniqueName3 = CM.SwitchLayerButton\\CM.SwitchLayerButton.csproj
+		SccProjectName3 = CM.SwitchLayerButton
+		SccLocalPath3 = CM.SwitchLayerButton
+		SccProjectUniqueName4 = CM.AlermInfo\\CM.AlermInfo.csproj
+		SccProjectName4 = CM.AlermInfo
+		SccLocalPath4 = CM.AlermInfo
+		SccProjectUniqueName5 = CM.MediaPlay\\CM.MediaPlay.csproj
+		SccProjectName5 = CM.MediaPlay
+		SccLocalPath5 = CM.MediaPlay
+		SccProjectUniqueName6 = CM.Track\\CM.Track.csproj
+		SccProjectName6 = CM.Track
+		SccLocalPath6 = CM.Track
+	EndGlobalSection
+EndGlobal

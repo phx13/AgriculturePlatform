@@ -1,0 +1,120 @@
+﻿<base:ChartViewBase xmlns:base="clr-namespace:Digihail.DAD3.Charts.Base;assembly=DAD3.Charts"
+                    x:Class="CM.CmDataGrid.DgView"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel x:Name="Grid1"
+                Orientation="Vertical">
+        <ListBox BorderThickness="0"
+                 Background="Transparent"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Top"
+                 ItemsSource="{Binding Datas.Headers}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                 SnapsToDevicePixels="True">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListBoxItem">
+                                <Border Background="{Binding DataContext.DgDvm.HeaderBackground, ElementName= Grid1}"
+                                        MinWidth="0"
+                                        MinHeight="0"
+                                        Width="{Binding HeaderWidth}"
+                                        Height="{Binding DataContext.DgDvm.HeaderHeight, ElementName= Grid1}"
+                                        BorderBrush="{Binding DataContext.DgDvm.HeaderDividingLine, ElementName= Grid1}"
+                                        BorderThickness="{Binding DataContext.DgDvm.HeaderDividingLineWidth, ElementName= Grid1}">
+                                    <TextBlock Text="{Binding HeaderText}"
+                                               FontFamily="{Binding DataContext.DgDvm.HeaderFontFamily, ElementName= Grid1}"
+                                               FontSize="{Binding DataContext.DgDvm.HeaderFontSize, ElementName= Grid1}"
+                                               Foreground="{Binding DataContext.DgDvm.HeaderForeground, ElementName= Grid1}"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="{Binding DataContext.DgDvm.HeaderHorizontalAlignment, ElementName= Grid1}" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+        <ListBox BorderThickness="0"
+                 Background="Transparent"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 ItemsSource="{Binding Datas.Columns}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                 SnapsToDevicePixels="True">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Width"
+                            Value="{Binding HeaderWidth}" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListBoxItem">
+                                <ListBox BorderThickness="0"
+                                         Background="Transparent"
+                                         HorizontalAlignment="Stretch"
+                                         VerticalAlignment="Top"
+                                         ItemsSource="{Binding Cells}"
+                                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                         ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                                         AlternationCount="2"
+                                         SnapsToDevicePixels="True">
+                                    <ListBox.ItemContainerStyle>
+                                        <Style TargetType="ListBoxItem">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="ListBoxItem">
+                                                        <Border
+                                                            BorderThickness="{Binding DataContext.DgDvm.GridDividingLineWidth, ElementName= Grid1}"
+                                                            BorderBrush="{Binding DataContext.DgDvm.GridDividingLine, ElementName= Grid1}"
+                                                            Height="{Binding DataContext.DgDvm.GridRowHeight, ElementName= Grid1}"
+                                                            Background="{TemplateBinding Background}"
+                                                            HorizontalAlignment="Stretch"
+                                                            Padding="0">
+                                                            <TextBlock Text="{Binding Content}"
+                                                                       FontFamily="{Binding DataContext.DgDvm.GridFontFamily, ElementName= Grid1}"
+                                                                       FontSize="{Binding DataContext.DgDvm.GridFontSize, ElementName= Grid1}"
+                                                                       Foreground="{Binding DataContext.DgDvm.GridForeground, ElementName= Grid1}"
+                                                                       VerticalAlignment="Center"
+                                                                       HorizontalAlignment="Left"
+                                                                       Margin="10,0,0,0" />
+                                                        </Border>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="ListBox.AlternationIndex"
+                                                                     Value="0">
+                                                                <Setter Property="Background"
+                                                                        Value="{Binding DataContext.DgDvm.InterlacingColor1, ElementName= Grid1}" />
+                                                            </Trigger>
+                                                            <Trigger Property="ListBox.AlternationIndex"
+                                                                     Value="1">
+                                                                <Setter Property="Background"
+                                                                        Value="{Binding DataContext.DgDvm.InterlacingColor2, ElementName= Grid1}" />
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </ListBox.ItemContainerStyle>
+                                </ListBox>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"
+                                IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+    </StackPanel>
+</base:ChartViewBase>
